@@ -23,5 +23,10 @@
   },
   "scripts": {
     "test": "node_modules/.bin/mocha test/*.test.js"
-  }
+  },
+  "files": [
+    "README.md",
+    "LICENSE.txt",
+    "activemq-transport.js"
+  ]
 }
