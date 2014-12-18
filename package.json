@@ -22,6 +22,6 @@
     "seneca-stomp-transport": "*"
   },
   "scripts": {
-    "test": "node-modules/.bin/mocha "
+    "test": "node_modules/.bin/mocha test/*.test.js"
   }
 }
