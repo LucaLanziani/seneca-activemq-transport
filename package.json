@@ -10,16 +10,17 @@
   "license": "MIT",
   "devDependencies": {
     "seneca": "^0.5.21",
-    "seneca-stomp-transport": "~0.1.0",
+    "seneca-stomp-transport": "~0.2.0",
     "mocha": "~1.20.1"
   },
   "dependencies": {
     "seneca": "*",
+    "underscore": "^1.7.0",
+    "seneca-stomp-transport": "~0.2.0",
     "underscore": "^1.7.0"
   },
   "peerDependencies": {
-    "seneca": "*",
-    "seneca-stomp-transport": "*"
+    "seneca": "*"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha test/*.test.js"

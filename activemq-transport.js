@@ -40,8 +40,11 @@ module.exports = function (options) {
     done();
   }
 
-  seneca.add({role: 'transport', hook: 'client', type: 'activemq'}, clientHook);
-  seneca.add({role: 'transport', hook: 'listen', type: 'activemq'}, listenHook);
+
+  seneca
+    .use('stomp-transport')
+    .add({role: 'transport', hook: 'client', type: 'activemq'}, clientHook)
+    .add({role: 'transport', hook: 'listen', type: 'activemq'}, listenHook);
 
   return { name: name };
 };

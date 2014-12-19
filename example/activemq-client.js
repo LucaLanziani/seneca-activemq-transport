@@ -1,7 +1,6 @@
 var util = require('util');
 
 var seneca = require('seneca')()
-      .use('stomp-transport')
       .use('../')
       .client({type:'activemq', port: 61613});
 

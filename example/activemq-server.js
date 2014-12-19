@@ -6,6 +6,6 @@ seneca.add( {cmd:'salestax'}, function(args,callback){
   callback(null, {total:total})
 });
 
-seneca.use('stomp-transport')
-    .use('../', {config: {port: 61613}})
-    .listen({type:'activemq'});
+seneca
+  .use('../', {config: {port: 61613}})
+  .listen({type:'activemq'});
