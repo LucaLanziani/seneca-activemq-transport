@@ -1,9 +1,9 @@
 var seneca = require('seneca')();
 
 seneca.add( {cmd:'salestax'}, function(args,callback){
-  var rate  = 0.23
-  var total = args.net * (1+rate)
-  callback(null, {total:total})
+  var rate  = 0.23;
+  var total = args.net * (1+rate);
+  callback(null, {total:total});
 });
 
 seneca
