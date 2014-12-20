@@ -1,6 +1,7 @@
 'use strict';
-var Seneca = require('seneca');
+
 var _ = require('underscore');
+var stomp_transport = require('seneca-stomp-transport');
 
 module.exports = function (options) {
   var seneca = this;
@@ -42,7 +43,7 @@ module.exports = function (options) {
 
 
   seneca
-    .use('stomp-transport')
+    .use(stomp_transport)
     .add({role: 'transport', hook: 'client', type: 'activemq'}, clientHook)
     .add({role: 'transport', hook: 'listen', type: 'activemq'}, listenHook);
 
